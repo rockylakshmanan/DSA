@@ -841,7 +841,7 @@ void left_half_pyramid8(int n)
   * 
   
 */
-void rev_half_pyramid_1(int n)
+void rev_right_half_pyramid_1(int n)
 {
 
     /*
@@ -867,7 +867,7 @@ void rev_half_pyramid_1(int n)
 
 }
 
-void rev_half_pyramid_2(int n)
+void rev_right_half_pyramid_2(int n)
 {
 
     /* 
@@ -893,7 +893,7 @@ void rev_half_pyramid_2(int n)
 
 }
 
-void rev_half_pyramid_3(int n)
+void rev_right_half_pyramid_3(int n)
 {
 
     /*
@@ -919,7 +919,7 @@ void rev_half_pyramid_3(int n)
 
 }
 
-void rev_half_pyramid_4(int n)
+void rev_right_half_pyramid_4(int n)
 {
 
     /*
@@ -945,7 +945,7 @@ void rev_half_pyramid_4(int n)
 
 }
 
-void rev_half_pyramid_5(int n)
+void rev_right_half_pyramid_5(int n)
 {
 
     /*
@@ -971,7 +971,7 @@ void rev_half_pyramid_5(int n)
 
 }
 
-void rev_half_pyramid_6(int n)
+void rev_right_half_pyramid_6(int n)
 {
 
     /*
@@ -1000,7 +1000,7 @@ void rev_half_pyramid_6(int n)
 
 }
 
-void rev_half_pyramid_7(int n)
+void rev_right_half_pyramid_7(int n)
 {
 
     /*
@@ -1028,7 +1028,7 @@ void rev_half_pyramid_7(int n)
 
 }
 
-void rev_half_pyramid_8(int n)
+void rev_right_half_pyramid_8(int n)
 {
 
     /*
@@ -1055,7 +1055,7 @@ void rev_half_pyramid_8(int n)
 
 }
 
-void rev_half_pyramid_9(int n)
+void rev_right_half_pyramid_9(int n)
 {
 
     /*
@@ -1082,7 +1082,7 @@ void rev_half_pyramid_9(int n)
 
 }
 
-void rev_half_pyramid_10(int n)
+void rev_right_half_pyramid_10(int n)
 {
 
     /*
@@ -1304,16 +1304,16 @@ int main()
         
 
 
-        //rev_half_pyramid_1(i);
-        //rev_half_pyramid_2(i);
-        //rev_half_pyramid_3(i);
-        //rev_half_pyramid_4(i);
-        //rev_half_pyramid_5(i);
-        //rev_half_pyramid_6(i);
-        //rev_half_pyramid_7(i);
-        //rev_half_pyramid_8(i);
-        //rev_half_pyramid_9(i);
-        //rev_half_pyramid_10(i);
+        //rev_right_half_pyramid_1(i);
+        //rev_right_half_pyramid_2(i);
+        //rev_right_half_pyramid_3(i);
+        //rev_right_half_pyramid_4(i);
+        //rev_right_half_pyramid_5(i);
+        //rev_right_half_pyramid_6(i);
+        //rev_right_half_pyramid_7(i);
+        //rev_right_half_pyramid_8(i);
+        //rev_right_half_pyramid_9(i);
+        //rev_right_half_pyramid_10(i);
         
 
         //pyramid_1b(i);
