@@ -73,13 +73,21 @@ void square_3(int n)
 
 
     */
-    int t=n*n;
+    int t=(n*n);
     for(int i=1;i<=n;i++)
     {
      for(int j=1;j<=n;j++)
-     {
-        cout<<t<<" ";
-        t--;
+     {  
+       if(t<10)
+       {
+        cout<<" "<<t<<" ";
+        
+       }
+        else
+        {cout<<t<<" ";
+        
+      }
+      t--;
      }
      cout<<endl;
     }
@@ -353,9 +361,17 @@ void right_half_pyramid_3(int n)
      
      
      for(int j=1;j<=i;j++)
-     {
+     {  
+      if(k<10)
+      {
+        cout<<" "<<k<<" ";
+      }
+      else{
+
+      
         cout<<k<<" ";
-        k++;
+        }
+          k++;
      }
      cout<<endl;
     }
@@ -373,7 +389,7 @@ void right_half_pyramid_4(int n)
      3 2 1     3      3     
         
     */
-    int k=2*n;
+   int k = (n * (n + 1)) / 2;
     for(int i=1;i<=n;i++)
     {
      
@@ -829,6 +845,76 @@ void left_half_pyramid8(int n)
 
 }
 
+void left_half_pyramid9(int n)
+{
+
+    /*
+
+     n=3     row    space  star
+        1    1       2     1
+      1 0    2       1     2
+    1 0 1    3       0     3
+   -------------------------------
+                     n-i    i   
+     
+    */
+ // int t=1;
+ 
+   for(int i=1;i<=n;i++)
+  {  
+    int t=1;
+    for(int s=1;s<=n-i;s++)
+    {
+      cout<<"  ";
+    }
+
+    for(int j=1;j<=i;j++)
+    {
+      cout<<t<<" ";
+      t=1-t;
+    }
+   
+    
+    cout<<endl;
+  }
+
+}
+
+void left_half_pyramid10(int n)
+{
+
+    /*
+
+     n=3     row    space  star
+        1    1       2     1
+      0 1    2       1     2
+    1 0 1    3       0     3
+   -------------------------------
+                     n-i    i   
+     
+    */
+  //int t=1;
+ 
+   for(int i=1;i<=n;i++)
+  {  
+    int t=(i%2!=0)?1:0;
+    for(int s=1;s<=n-i;s++)
+    {
+      cout<<"  ";
+    }
+
+    for(int j=1;j<=i;j++)
+    {
+      cout<<t<<" ";
+      t=1-t;
+    }
+   
+    
+    cout<<endl;
+  }
+
+}
+
 
 
 
@@ -839,6 +925,12 @@ void left_half_pyramid8(int n)
   * * *
   * *
   * 
+  
+
+
+  * * *
+    * *
+      *
   
 */
 void rev_right_half_pyramid_1(int n)
@@ -1112,12 +1204,133 @@ void rev_right_half_pyramid_10(int n)
 
 
 
+/*rev_left_half_pyramid*/
+void rev_left_half_pyramid_1(int n)
+{
 
-            /*pyramid*/
+    /*
+     n=3     row   star   space
+     * * *   1      3       0
+       * *   2      2       1
+         *   3      1       2
+
+    */
+  
+  for(int i=1;i<=n;i++)
+  {  
+    
+    for(int s =1;s<=(i-1);s++)
+    {
+     cout<<"  ";
+    }
+
+    for(int j=1;j<=n-i+1;j++)
+    {  
+     cout<<"* ";
+          
+    }
+    cout<<endl;
+  }
+
+}
+
+void rev_left_half_pyramid_2(int n)
+{
+
+    /*
+     n=3     row   star   space
+     1 2 3   1      3       0
+       1 2   2      2       1
+         1   3      1       2
+
+    */
+  
+  for(int i=1;i<=n;i++)
+  {  
+    
+    for(int s =1;s<=(i-1);s++)
+    {
+     cout<<"  ";
+    }
+
+    for(int j=1;j<=n-i+1;j++)
+    {  
+     cout<<j<<" ";
+          
+    }
+    cout<<endl;
+  }
+
+}
+
+
+void rev_left_half_pyramid_3(int n)
+{
+
+    /*
+     n=3     row   star   space
+     1 2 3   1      3       0
+       4 5   2      2       1
+         6   3      1       2
+
+    */
+  int t=1;
+  for(int i=1;i<=n;i++)
+  {  
+    
+    for(int s =1;s<=(i-1);s++)
+    {
+     cout<<"  ";
+    }
+
+    for(int j=1;j<=n-i+1;j++)
+    {  
+     cout<<t<<" ";
+     t++;
+          
+    }
+    cout<<endl;
+  }
+
+}
+
+void rev_left_half_pyramid_4(int n)
+{
+
+    /*
+     n=3     row   star   space
+     6 5 4   1      3       0
+       3 2   2      2       1
+         1   3      1       2
+
+    */
+  int t=(n * (n + 1)) / 2;
+  for(int i=1;i<=n;i++)
+  {  
+    
+    for(int s =1;s<=(i-1);s++)
+    {
+     cout<<"  ";
+    }
+
+    for(int j=1;j<=n-i+1;j++)
+    {  
+     cout<<t<<" ";
+     t--;
+          
+    }
+    cout<<endl;
+  }
+
+}
+
+
+
+           /*pyramid*/
 
 void pyramid_1a(int n)
 {
-    /*
+    /*  n=3
            *
          * * *
        * * * * *   
@@ -1245,7 +1458,37 @@ void pyramid_3(int n)
     }
 }
 
+void pyramid_1(int n)
+{
+   /*
+   n=3          row   space star
+         *       1       2    1 
+        ***      2       1    3
+       *****     3       0    5
+      ------------------------------
+                      n-row   (2*row)-1   
+                       3-1     2x1-1
+                       3-2     2x2-1
+                       3-3     2x3-1
 
+   */     
+
+  for(int i=1;i<=n;i++)
+  {
+    for(int s=1;s<=n-i;s++)
+    {
+      cout<<"  ";
+    }
+
+
+    for(int j=1;j<=(2*i)-1;j++)
+    {
+      cout<<"* ";
+    }
+    cout<<endl;
+
+  }
+}
 
 
 
@@ -1254,15 +1497,280 @@ void pyramid_3(int n)
 void diamond1(int n)
 {
     /*
-    n=3
-       *
-      ***
-     *****
-      ***
-       *
+    n=3       row    space   star
+       *       1       2      1
+      ***      2       1      3
+     *****     3       0      5
+      ***      4       1      3
+       *       5       2      1
+       -------------------------------
+                      n-i     2xi-1
        
+//(2*n -i)- (n-i)
+
     */
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+      
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<"* ";
+      }
+
+      cout<<endl;
+
+   }
+  
 }
+
+void diamond2(int n)
+{
+    /*
+    n=3       row    space   star
+       1       1       2      1
+      123      2       1      3
+     12345     3       0      5
+      123      4       1      3
+       1       5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+      
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<j<<" ";
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+void diamond3(int n)
+{
+    /*
+    n=3              row    space   star
+         1            1       2      1
+      2  3  4         2       1      3
+   5  6  7  8  9      3       0      5
+     10 11 12         4       1      3
+        11            5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+   int k=1;
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+      
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        // if(k<10)
+        // {
+        // cout<<" "<<k<<" ";
+        
+        // }
+        // else
+        // {
+        //   cout<<k<< " ";
+        // }
+        // k++;
+        cout<<k<< " ";
+        k++;
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+void diamond4(int n)
+{
+    /*
+    n=3              row    space   star
+         1            1       2      1
+       1 0 1          2       1      3
+     1 0 1 0 1        3       0      5
+       1 0 1          4       1      3
+         1            5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+  
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+      int k=1;
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<k<<" ";
+        k=1-k;
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+void diamond5(int n)
+{
+    /*
+    n=3              row    space   star
+         1            1       2      1
+       0 1 0          2       1      3
+     1 0 1 0 1        3       0      5
+       0 1 0          4       1      3
+         1            5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+  
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+      int k=(i%2!=0)?1:0;
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<k<<" ";
+        k=1-k;
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+void diamond6(int n)
+{
+    /*
+    n=3              row    space   star
+         A            1       2      1
+       A B A          2       1      3
+     A B A B A        3       0      5
+       A B A          4       1      3
+         A            5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+  
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+     char k='A';
+      
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<k<<" ";
+        k=(k=='A')?'B':'A';
+       
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+void diamond7(int n)
+{
+    /*
+    n=3              row    space   star
+         A            1       2      1
+       B A B           2       1      3
+     A B A B A        3       0      5
+       B A B          4       1      3
+         A            5       2      1
+       -------------------------------
+                      n-i     2xi-1
+       
+//(2*n -i)- (n-i)
+
+    */
+  
+   int temp=n;
+   for(int i=1;i<=(2*n)-1;i++)
+   { 
+     temp=(i>n)?(temp-1):i;
+     char k=(i%2!=0)?'A':'B';
+      
+      for(int s=1;s<=(n-temp);s++)
+      {
+        cout<<"  ";
+      }
+
+      for(int j=1;j<=(2*temp)-1;j++)
+      {
+        cout<<k<<" ";
+        k=(k=='A')?'B':'A';
+       
+      }
+
+      cout<<endl;
+
+   }
+  
+}
+
+
 
 
 int main()
@@ -1273,7 +1781,7 @@ int main()
     {
         //square_1(i);
         //square_2(i);
-        //square_3(i);
+       // square_3(i);
         //square_4(i);  
         //square_5(i);
         //square_6(i);
@@ -1281,7 +1789,7 @@ int main()
         //square_(i);
 
         //right_half_pyramid_1(i);
-        //right_half_pyramid_2(i);
+        //right_half_pyramid_2(i); 
         //right_half_pyramid_3(i);
         //right_half_pyramid_4(i);
         //right_half_pyramid_5(i);
@@ -1298,7 +1806,9 @@ int main()
         // left_half_pyramid5(i);
         //left_half_pyramid6(i);
         //left_half_pyramid7(i);
-        left_half_pyramid8(i);
+        //left_half_pyramid8(i);
+        // left_half_pyramid9(i);
+        //left_half_pyramid10(i);
 
           
         
@@ -1316,9 +1826,22 @@ int main()
         //rev_right_half_pyramid_10(i);
         
 
+        // rev_left_half_pyramid_1(i);
+        // rev_left_half_pyramid_2(i);
+        //rev_left_half_pyramid_3(i);
+       // rev_left_half_pyramid_4(i);
+
+      // pyramid_1(i);
         //pyramid_1b(i);
         //pyramid_2(i);
         //  pyramid_3(i);
+       
+        // diamond1(i);
+        //diamond2(i);
+        // diamond3(3);
+        // diamond4(i);
+        //diamond6(i);
+        diamond7(i);
 
         
         cout<<"-----------------x----------------\n";
