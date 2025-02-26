@@ -355,6 +355,7 @@ void right_half_pyramid_3(int n)
      4 5 6     3      3     
 
     */
+   
     int k=1;
     for(int i=1;i<=n;i++)
     {

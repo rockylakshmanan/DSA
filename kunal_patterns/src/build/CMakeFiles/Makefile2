@@ -44,10 +44,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sysadmin/rocky/data_algo/DSA/1_pattern
+CMAKE_SOURCE_DIR = /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sysadmin/rocky/data_algo/DSA/1_pattern/build
+CMAKE_BINARY_DIR = /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/pattern.dir/clean
 CMakeFiles/pattern.dir/all:
 	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/depend
 	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles --progress-num=1,2 "Built target pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles --progress-num=1,2 "Built target pattern"
 .PHONY : CMakeFiles/pattern.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pattern.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pattern.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/pattern.dir/rule
 
 # Convenience name for target.

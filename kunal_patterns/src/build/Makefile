@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sysadmin/rocky/data_algo/DSA/1_pattern
+CMAKE_SOURCE_DIR = /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sysadmin/rocky/data_algo/DSA/1_pattern/build
+CMAKE_BINARY_DIR = /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles /home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ pattern/fast:
 	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/build
 .PHONY : pattern/fast
 
-pattern.o: pattern.cpp.o
+src/pattern.o: src/pattern.cpp.o
 
-.PHONY : pattern.o
+.PHONY : src/pattern.o
 
 # target to build an object file
-pattern.cpp.o:
-	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/pattern.cpp.o
-.PHONY : pattern.cpp.o
+src/pattern.cpp.o:
+	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/src/pattern.cpp.o
+.PHONY : src/pattern.cpp.o
 
-pattern.i: pattern.cpp.i
+src/pattern.i: src/pattern.cpp.i
 
-.PHONY : pattern.i
+.PHONY : src/pattern.i
 
 # target to preprocess a source file
-pattern.cpp.i:
-	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/pattern.cpp.i
-.PHONY : pattern.cpp.i
+src/pattern.cpp.i:
+	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/src/pattern.cpp.i
+.PHONY : src/pattern.cpp.i
 
-pattern.s: pattern.cpp.s
+src/pattern.s: src/pattern.cpp.s
 
-.PHONY : pattern.s
+.PHONY : src/pattern.s
 
 # target to generate assembly for a file
-pattern.cpp.s:
-	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/pattern.cpp.s
-.PHONY : pattern.cpp.s
+src/pattern.cpp.s:
+	$(MAKE) -f CMakeFiles/pattern.dir/build.make CMakeFiles/pattern.dir/src/pattern.cpp.s
+.PHONY : src/pattern.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pattern"
-	@echo "... pattern.o"
-	@echo "... pattern.i"
-	@echo "... pattern.s"
+	@echo "... src/pattern.o"
+	@echo "... src/pattern.i"
+	@echo "... src/pattern.s"
 .PHONY : help
 
 

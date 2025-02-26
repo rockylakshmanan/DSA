@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sysadmin/rocky/data_algo/DSA/1_pattern/pattern.cpp" "/home/sysadmin/rocky/data_algo/DSA/1_pattern/build/CMakeFiles/pattern.dir/pattern.cpp.o"
+  "/home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/src/pattern.cpp" "/home/sysadmin/rocky/data_algo/DSA/kunal_patterns/src/build/CMakeFiles/pattern.dir/src/pattern.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
