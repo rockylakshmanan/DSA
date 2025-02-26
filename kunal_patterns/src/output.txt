@@ -1,0 +1,33 @@
+*******Pattern Problems********
+    A 
+  B A B 
+A B A B A 
+  B A B 
+    A 
+-----------------x----------------
+        A 
+      B A B 
+    A B A B A 
+  B A B A B A B 
+A B A B A B A B A 
+  B A B A B A B 
+    A B A B A 
+      B A B 
+        A 
+-----------------x----------------
+              A 
+            B A B 
+          A B A B A 
+        B A B A B A B 
+      A B A B A B A B A 
+    B A B A B A B A B A B 
+  A B A B A B A B A B A B A 
+B A B A B A B A B A B A B A B 
+  A B A B A B A B A B A B A 
+    B A B A B A B A B A B 
+      A B A B A B A B A 
+        B A B A B A B 
+          A B A B A 
+            B A B 
+              A 
+-----------------x----------------
